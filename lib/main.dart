@@ -46,7 +46,6 @@ class _MeuAppState extends State<MeuApp> {
   void calcular() {
     String expressao;
     double resultado;
-    var sec = const Duration(seconds: 6);
     if (entrada.isEmpty) return;
 
     if (entrada.last != '+' &&
