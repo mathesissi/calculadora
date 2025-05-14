@@ -98,7 +98,6 @@ class _MeuAppState extends State<MeuApp> {
               fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              fontFamily: 'Sans',
             ),
           ),
         ),
@@ -114,7 +113,7 @@ class _MeuAppState extends State<MeuApp> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     TextField(
-                      readOnly: false,
+                      readOnly: true,
                       textAlign: TextAlign.right,
                       controller: _visorController,
                       style: TextStyle(fontSize: 100),
@@ -123,6 +122,7 @@ class _MeuAppState extends State<MeuApp> {
                   ],
                 ),
               ),
+              SizedBox(height: 10),
               Expanded(
                 child: GridView.count(
                   physics: NeverScrollableScrollPhysics(),
